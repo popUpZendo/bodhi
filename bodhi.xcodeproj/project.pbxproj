@@ -1,0 +1,465 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D764DCBC1F9CE8970039B121 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D764DCBB1F9CE8970039B121 /* AppDelegate.swift */; };
+		D764DCBE1F9CE8970039B121 /* ListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D764DCBD1F9CE8970039B121 /* ListVC.swift */; };
+		D764DCC31F9CE8970039B121 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D764DCC11F9CE8970039B121 /* Main.storyboard */; };
+		D764DCC51F9CE8970039B121 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D764DCC41F9CE8970039B121 /* Assets.xcassets */; };
+		D764DCC81F9CE8970039B121 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D764DCC61F9CE8970039B121 /* LaunchScreen.storyboard */; };
+		D764DCD01F9CE9200039B121 /* profileZen.png in Resources */ = {isa = PBXBuildFile; fileRef = D764DCCF1F9CE9200039B121 /* profileZen.png */; };
+		D764DCD61F9CED6E0039B121 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D764DCD51F9CED6D0039B121 /* GoogleService-Info.plist */; };
+		D764DCDA1F9E9E160039B121 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D764DCD91F9E9E160039B121 /* ProfileVC.swift */; };
+		D764DCDC1F9E9E6F0039B121 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D764DCDB1F9E9E6F0039B121 /* LoginVC.swift */; };
+		D764DCDF1F9FAA180039B121 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D764DCDE1F9FAA180039B121 /* DataService.swift */; };
+		FF9CEC3A426B0D792CBB8A3D /* Pods_bodhi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0C7C65AAF6992AC6209BB4E /* Pods_bodhi.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		03C5B37D97F955E72285F4C2 /* Pods-bodhi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bodhi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bodhi/Pods-bodhi.debug.xcconfig"; sourceTree = "<group>"; };
+		A0FDB801BAC0EBA365224575 /* Pods-bodhi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bodhi.release.xcconfig"; path = "Pods/Target Support Files/Pods-bodhi/Pods-bodhi.release.xcconfig"; sourceTree = "<group>"; };
+		B0C7C65AAF6992AC6209BB4E /* Pods_bodhi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bodhi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D764DCB81F9CE8970039B121 /* bodhi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bodhi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D764DCBB1F9CE8970039B121 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D764DCBD1F9CE8970039B121 /* ListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVC.swift; sourceTree = "<group>"; };
+		D764DCC21F9CE8970039B121 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D764DCC41F9CE8970039B121 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D764DCC71F9CE8970039B121 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D764DCC91F9CE8970039B121 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D764DCCF1F9CE9200039B121 /* profileZen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profileZen.png; sourceTree = "<group>"; };
+		D764DCD41F9CED0B0039B121 /* bodhi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = bodhi.entitlements; sourceTree = "<group>"; };
+		D764DCD51F9CED6D0039B121 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D764DCD91F9E9E160039B121 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		D764DCDB1F9E9E6F0039B121 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		D764DCDE1F9FAA180039B121 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D764DCB51F9CE8970039B121 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF9CEC3A426B0D792CBB8A3D /* Pods_bodhi.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		56EEF3634648E04BA26185ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B0C7C65AAF6992AC6209BB4E /* Pods_bodhi.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9AA2BD2496D9A4C189211E64 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				03C5B37D97F955E72285F4C2 /* Pods-bodhi.debug.xcconfig */,
+				A0FDB801BAC0EBA365224575 /* Pods-bodhi.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D764DCAF1F9CE8970039B121 = {
+			isa = PBXGroup;
+			children = (
+				D764DCBA1F9CE8970039B121 /* bodhi */,
+				D764DCB91F9CE8970039B121 /* Products */,
+				9AA2BD2496D9A4C189211E64 /* Pods */,
+				56EEF3634648E04BA26185ED /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D764DCB91F9CE8970039B121 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D764DCB81F9CE8970039B121 /* bodhi.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D764DCBA1F9CE8970039B121 /* bodhi */ = {
+			isa = PBXGroup;
+			children = (
+				D764DCDD1F9FA9E90039B121 /* Services */,
+				D764DCD41F9CED0B0039B121 /* bodhi.entitlements */,
+				D764DCD31F9CEA1A0039B121 /* Model */,
+				D764DCD21F9CEA0A0039B121 /* View */,
+				D764DCD11F9CE9FB0039B121 /* Controller */,
+				D764DCBB1F9CE8970039B121 /* AppDelegate.swift */,
+				D764DCC11F9CE8970039B121 /* Main.storyboard */,
+				D764DCC41F9CE8970039B121 /* Assets.xcassets */,
+				D764DCCF1F9CE9200039B121 /* profileZen.png */,
+				D764DCC61F9CE8970039B121 /* LaunchScreen.storyboard */,
+				D764DCD51F9CED6D0039B121 /* GoogleService-Info.plist */,
+				D764DCC91F9CE8970039B121 /* Info.plist */,
+			);
+			path = bodhi;
+			sourceTree = "<group>";
+		};
+		D764DCD11F9CE9FB0039B121 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D764DCBD1F9CE8970039B121 /* ListVC.swift */,
+				D764DCD91F9E9E160039B121 /* ProfileVC.swift */,
+				D764DCDB1F9E9E6F0039B121 /* LoginVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D764DCD21F9CEA0A0039B121 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D764DCD31F9CEA1A0039B121 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D764DCDD1F9FA9E90039B121 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D764DCDE1F9FAA180039B121 /* DataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D764DCB71F9CE8970039B121 /* bodhi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D764DCCC1F9CE8970039B121 /* Build configuration list for PBXNativeTarget "bodhi" */;
+			buildPhases = (
+				B2176450D3AACD2B00F974A0 /* [CP] Check Pods Manifest.lock */,
+				D764DCB41F9CE8970039B121 /* Sources */,
+				D764DCB51F9CE8970039B121 /* Frameworks */,
+				D764DCB61F9CE8970039B121 /* Resources */,
+				4C5BAE30623B8453EA53634C /* [CP] Embed Pods Frameworks */,
+				764A92FCDFDE0B951BAFECBF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = bodhi;
+			productName = bodhi;
+			productReference = D764DCB81F9CE8970039B121 /* bodhi.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D764DCB01F9CE8970039B121 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Joseph Hall";
+				TargetAttributes = {
+					D764DCB71F9CE8970039B121 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = D764DCB31F9CE8970039B121 /* Build configuration list for PBXProject "bodhi" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D764DCAF1F9CE8970039B121;
+			productRefGroup = D764DCB91F9CE8970039B121 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D764DCB71F9CE8970039B121 /* bodhi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D764DCB61F9CE8970039B121 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D764DCC81F9CE8970039B121 /* LaunchScreen.storyboard in Resources */,
+				D764DCC51F9CE8970039B121 /* Assets.xcassets in Resources */,
+				D764DCD61F9CED6E0039B121 /* GoogleService-Info.plist in Resources */,
+				D764DCC31F9CE8970039B121 /* Main.storyboard in Resources */,
+				D764DCD01F9CE9200039B121 /* profileZen.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4C5BAE30623B8453EA53634C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-bodhi/Pods-bodhi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		764A92FCDFDE0B951BAFECBF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-bodhi/Pods-bodhi-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2176450D3AACD2B00F974A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D764DCB41F9CE8970039B121 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D764DCDA1F9E9E160039B121 /* ProfileVC.swift in Sources */,
+				D764DCDC1F9E9E6F0039B121 /* LoginVC.swift in Sources */,
+				D764DCBC1F9CE8970039B121 /* AppDelegate.swift in Sources */,
+				D764DCBE1F9CE8970039B121 /* ListVC.swift in Sources */,
+				D764DCDF1F9FAA180039B121 /* DataService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D764DCC11F9CE8970039B121 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D764DCC21F9CE8970039B121 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D764DCC61F9CE8970039B121 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D764DCC71F9CE8970039B121 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D764DCCA1F9CE8970039B121 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D764DCCB1F9CE8970039B121 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D764DCCD1F9CE8970039B121 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03C5B37D97F955E72285F4C2 /* Pods-bodhi.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = bodhi/bodhi.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 93HG3CWZZK;
+				INFOPLIST_FILE = bodhi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.popupzendo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D764DCCE1F9CE8970039B121 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0FDB801BAC0EBA365224575 /* Pods-bodhi.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = bodhi/bodhi.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 93HG3CWZZK;
+				INFOPLIST_FILE = bodhi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.popupzendo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D764DCB31F9CE8970039B121 /* Build configuration list for PBXProject "bodhi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D764DCCA1F9CE8970039B121 /* Debug */,
+				D764DCCB1F9CE8970039B121 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D764DCCC1F9CE8970039B121 /* Build configuration list for PBXNativeTarget "bodhi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D764DCCD1F9CE8970039B121 /* Debug */,
+				D764DCCE1F9CE8970039B121 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D764DCB01F9CE8970039B121 /* Project object */;
+}
