@@ -2,8 +2,8 @@
 //  DataService.swift
 //  breakpoint
 //
-//  Created by Joseph Hall on 10/24/17.
-//  Copyright © Joseph Hall. All rights reserved.
+//  Created by Caleb Stultz on 7/22/17.
+//  Copyright © 2017 Caleb Stultz. All rights reserved.
 //
 
 import Foundation
@@ -19,6 +19,7 @@ class DataService {
     private var _REF_GROUPS = DB_BASE.child("groups")
     private var _REF_FEED = DB_BASE.child("feed")
     private var _REF_BUDDHA = DB_BASE.child("Buddha")
+    private var _REF_BODHI = DB_BASE.child("bodhi")
     
     var REF_BASE: DatabaseReference {
         return _REF_BASE
@@ -38,6 +39,10 @@ class DataService {
     
     var REF_BUDDHA: DatabaseReference {
         return _REF_BUDDHA
+    }
+    
+    var REF_BODHI: DatabaseReference {
+        return _REF_BODHI
     }
     
     func createDBUser(uid: String, userData: Dictionary<String, Any>) {
@@ -65,9 +70,10 @@ class DataService {
         }
     }
     
-    func uploadBuddha(withMessage message: String, forUID uid: String, withBuddhaKey buddhaKey: String?, sendComplete: @escaping (_ status: Bool) -> ()) {
-        if buddhaKey != nil {
-            REF_BUDDHA.child(buddhaKey!).child("messages").childByAutoId().updateChildValues(["content": message, "senderId": uid])
+    
+    func uploadBodhi(withDetails message: String, forUID uid: String, withBodhiKey bodhiKey: String?, sendComplete: @escaping (_ status: Bool) -> ()) {
+        if bodhiKey != nil {
+            REF_BODHI.child(bodhiKey!).child("messages").childByAutoId().updateChildValues(["content": message, "senderId": uid])
             sendComplete(true)
         } else {
             REF_FEED.childByAutoId().updateChildValues(["content": message, "senderId": uid])
@@ -120,6 +126,7 @@ class DataService {
             handler(emailArray)
         }
     }
+    
     
     func getIds(forUsernames usernames: [String], handler: @escaping (_ uidArray: [String]) -> ()) {
         REF_USERS.observeSingleEvent(of: .value) { (userSnapshot) in
@@ -190,6 +197,13 @@ class DataService {
     //    }
     //
 }
+
+
+
+
+
+
+
 
 
 

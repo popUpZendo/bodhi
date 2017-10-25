@@ -13,8 +13,9 @@ class MeVC: UIViewController, UIImagePickerControllerDelegate, UINavigationContr
 
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var emailLbl: UILabel!
-    @IBOutlet weak var tableView: UITableView!
+    
     @IBOutlet weak var menuBtn: UIButton!
+    @IBOutlet weak var nameLbl: UILabel!
     
     let imagePicker = UIImagePickerController()
     
