@@ -37,6 +37,8 @@
 		D764DD241F9FC5EF0039B121 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D764DD231F9FC5EF0039B121 /* SWRevealViewController.m */; };
 		D764DD261F9FFA340039B121 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D764DD251F9FFA340039B121 /* ChannelVC.swift */; };
 		D764DD281F9FFB800039B121 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D764DD271F9FFB800039B121 /* ChatVC.swift */; };
+		D7739DA51FA2892800402B5F /* Bodhi.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7739DA41FA2892800402B5F /* Bodhi.swift */; };
+		D7739DA71FA2BAC400402B5F /* readMeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7739DA61FA2BAC400402B5F /* readMeVC.swift */; };
 		FF9CEC3A426B0D792CBB8A3D /* Pods_bodhi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0C7C65AAF6992AC6209BB4E /* Pods_bodhi.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +81,8 @@
 		D764DD231F9FC5EF0039B121 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		D764DD251F9FFA340039B121 /* ChannelVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		D764DD271F9FFB800039B121 /* ChatVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		D7739DA41FA2892800402B5F /* Bodhi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bodhi.swift; sourceTree = "<group>"; };
+		D7739DA61FA2BAC400402B5F /* readMeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = readMeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				D764DCF01F9FAE6C0039B121 /* MeVC.swift */,
+				D7739DA61FA2BAC400402B5F /* readMeVC.swift */,
 				D764DD271F9FFB800039B121 /* ChatVC.swift */,
 				D764DD251F9FFA340039B121 /* ChannelVC.swift */,
 				D764DCE91F9FAE6C0039B121 /* CreateGroupsVC.swift */,
@@ -186,6 +191,7 @@
 				D764DCF41F9FAE6C0039B121 /* Buddha.swift */,
 				D764DCF51F9FAE6C0039B121 /* Group.swift */,
 				D764DCF61F9FAE6C0039B121 /* Message.swift */,
+				D7739DA41FA2892800402B5F /* Bodhi.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -348,12 +354,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7739DA51FA2892800402B5F /* Bodhi.swift in Sources */,
 				D764DD061F9FAE6C0039B121 /* FeedVC.swift in Sources */,
 				D764DD0E1F9FAE6C0039B121 /* Group.swift in Sources */,
 				D764DD051F9FAE6C0039B121 /* CreatePostVC.swift in Sources */,
 				D764DD241F9FC5EF0039B121 /* SWRevealViewController.m in Sources */,
 				D764DD261F9FFA340039B121 /* ChannelVC.swift in Sources */,
 				D764DD0F1F9FAE6C0039B121 /* Message.swift in Sources */,
+				D7739DA71FA2BAC400402B5F /* readMeVC.swift in Sources */,
 				D764DCDA1F9E9E160039B121 /* ProfileVC.swift in Sources */,
 				D764DCDC1F9E9E6F0039B121 /* LoginVC.swift in Sources */,
 				D764DD181F9FAE6C0039B121 /* ShadowView.swift in Sources */,

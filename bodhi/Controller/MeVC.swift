@@ -11,19 +11,31 @@ import Firebase
 
 class MeVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
+    
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var emailLbl: UILabel!
-    
     @IBOutlet weak var menuBtn: UIButton!
     @IBOutlet weak var nameLbl: UILabel!
+    @IBOutlet weak var sendBtn: UIButton!
+    @IBOutlet weak var nameField: UITextField!
+    @IBOutlet weak var popUpGroupField: UITextField!
+    @IBOutlet weak var cityField: UITextField!
+    @IBOutlet weak var stateField: UITextField!
+    @IBOutlet weak var templeField: UITextField!
+    @IBOutlet weak var teacherField: UITextField!
+    @IBOutlet weak var practiceField: UITextField!
+    @IBOutlet weak var keyField: UITextField!
+    
     
     let imagePicker = UIImagePickerController()
+    
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
        imagePicker.delegate = self
+        nameField.delegate = self
         
 //        photoHelper.completionHandler = { image in
 //            PostService.create(for: image)
@@ -45,6 +57,26 @@ class MeVC: UIViewController, UIImagePickerControllerDelegate, UINavigationContr
         self.emailLbl.text = Auth.auth().currentUser?.email
     }
 
+    
+    @IBAction func sendBtnWasPressed(_ sender: Any) {
+        if nameField.text != nil
+//            && textView.text != "Say something here..."
+        {
+            sendBtn.isEnabled = false
+            
+            DataService.instance.uploadBodhi(withName: nameField.text!, withPopUpGroup: popUpGroupField.text!, withCity: cityField.text!, withState: stateField.text!, withTemple: templeField.text!, withTeacher: teacherField.text!, withPractice: practiceField.text!, forUID: (Auth.auth().currentUser?.uid)!, withBodhiKey: nil, sendComplete: { (isComplete) in
+                if isComplete {
+                    self.sendBtn.isEnabled = true
+                    self.dismiss(animated: true, completion: nil)
+                } else {
+                    self.sendBtn.isEnabled = true
+                    print("There was an error!")
+                }
+            })
+        }
+    }
+            
+    
     @IBAction func profileWasTapped(sender: Any) {
         
         imagePicker.allowsEditing = false
@@ -107,6 +139,13 @@ class MeVC: UIViewController, UIImagePickerControllerDelegate, UINavigationContr
     
     
 }
+
+extension MeVC: UITextFieldDelegate {
+    private func textViewDidBeginEditing(_ textView: UITextView) {
+        textView.text = ""
+    }
+}
+
 
 
 

@@ -70,17 +70,36 @@ class DataService {
         }
     }
     
+//    Working Bodhi...Trying for 2
+//    func uploadBodhi(withDetails message: String, forUID uid: String, withBodhiKey bodhiKey: String?, sendComplete: @escaping (_ status: Bool) -> ()) {
+//        if bodhiKey != nil {
+//            REF_BODHI.child(bodhiKey!).child("messages").childByAutoId().updateChildValues(["content": message, "senderId": uid])
+//            sendComplete(true)
+//        } else {
+//            REF_BODHI.childByAutoId().updateChildValues(["content": message, "senderId": uid])
+//            sendComplete(true)
+//        }
+//    }
     
-    func uploadBodhi(withDetails message: String, forUID uid: String, withBodhiKey bodhiKey: String?, sendComplete: @escaping (_ status: Bool) -> ()) {
-        if bodhiKey != nil {
-            REF_BODHI.child(bodhiKey!).child("messages").childByAutoId().updateChildValues(["content": message, "senderId": uid])
-            sendComplete(true)
-        } else {
-            REF_FEED.childByAutoId().updateChildValues(["content": message, "senderId": uid])
-            sendComplete(true)
-        }
-    }
+//    func uploadBodhi (withName name: String, With PopUpGroup popUpGroup: String, withCity city: String, withState state: String, with Temple temple: String, with Teacher teacher: String, withPractice practice: String, forUID uid: String, withBodhiKey bodhiKey: String?, sendComplete: @escaping (_ status: Bool) -> ()) {
+//        if bodhiKey != nil {
+//            REF_BODHI.child(bodhiKey!).child("profile").childByAutoId().updateChildValues(["Name": name, "PopUpGroup": popUpGroup, "City": city, "State": state, "Temple": temple, "Teacher": teacher, "Practice": practice, senderId": uid])
+//                sendComplete(true)
+//        } else {
+//            REF_BODHI.childByAutoId().updateChildValues(["Name": name, "PopUpGroup": popUpGroup, "City": city, "State": state, "Temple": temple, "Teacher": teacher, "Practice": practice,"senderId": uid])
+//            sendComplete(true)
+//        }
+//    }
     
+    func uploadBodhi(withName name: String, withPopUpGroup popUpGroup: String, withCity city: String, withState state: String, withTemple temple: String, withTeacher teacher: String, withPractice practice: String, forUID uid: String, withBodhiKey bodhiKey: String?, sendComplete: @escaping (_ status: Bool) -> ()) {
+                if bodhiKey != nil {
+                    REF_BODHI.child(bodhiKey!).child("profile").childByAutoId().updateChildValues(["Name": name, "PopUpGroup": popUpGroup, "City": city, "State": state, "Temple": temple, "Teacher": teacher, "Practice": practice, "senderId": uid])
+                    sendComplete(true)
+                } else {
+                    REF_BODHI.childByAutoId().updateChildValues(["Name": name, "PopUpGroup": popUpGroup, "City": city, "State": state, "Temple": temple, "Teacher": teacher, "Practice": practice,"senderId": uid])
+                    sendComplete(true)
+                }
+            }
     
     func getAllFeedMessages(handler: @escaping (_ messages: [Message]) -> ()) {
         var messageArray = [Message]()
