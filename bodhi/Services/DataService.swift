@@ -49,6 +49,8 @@ class DataService {
         REF_USERS.child(uid).updateChildValues(userData)
     }
     
+
+    
     func getUsername(forUID uid: String, handler: @escaping (_ username: String) -> ()) {
         REF_USERS.observeSingleEvent(of: .value) { (userSnapshot) in
             guard let userSnapshot = userSnapshot.children.allObjects as? [DataSnapshot] else { return }
@@ -70,33 +72,13 @@ class DataService {
         }
     }
     
-//    Working Bodhi...Trying for 2
-//    func uploadBodhi(withDetails message: String, forUID uid: String, withBodhiKey bodhiKey: String?, sendComplete: @escaping (_ status: Bool) -> ()) {
-//        if bodhiKey != nil {
-//            REF_BODHI.child(bodhiKey!).child("messages").childByAutoId().updateChildValues(["content": message, "senderId": uid])
-//            sendComplete(true)
-//        } else {
-//            REF_BODHI.childByAutoId().updateChildValues(["content": message, "senderId": uid])
-//            sendComplete(true)
-//        }
-//    }
-    
-//    func uploadBodhi (withName name: String, With PopUpGroup popUpGroup: String, withCity city: String, withState state: String, with Temple temple: String, with Teacher teacher: String, withPractice practice: String, forUID uid: String, withBodhiKey bodhiKey: String?, sendComplete: @escaping (_ status: Bool) -> ()) {
-//        if bodhiKey != nil {
-//            REF_BODHI.child(bodhiKey!).child("profile").childByAutoId().updateChildValues(["Name": name, "PopUpGroup": popUpGroup, "City": city, "State": state, "Temple": temple, "Teacher": teacher, "Practice": practice, senderId": uid])
-//                sendComplete(true)
-//        } else {
-//            REF_BODHI.childByAutoId().updateChildValues(["Name": name, "PopUpGroup": popUpGroup, "City": city, "State": state, "Temple": temple, "Teacher": teacher, "Practice": practice,"senderId": uid])
-//            sendComplete(true)
-//        }
-//    }
     
     func uploadBodhi(withName name: String, withPopUpGroup popUpGroup: String, withCity city: String, withState state: String, withTemple temple: String, withTeacher teacher: String, withPractice practice: String, forUID uid: String, withBodhiKey bodhiKey: String?, sendComplete: @escaping (_ status: Bool) -> ()) {
                 if bodhiKey != nil {
-                    REF_BODHI.child(bodhiKey!).child("profile").childByAutoId().updateChildValues(["Name": name, "PopUpGroup": popUpGroup, "City": city, "State": state, "Temple": temple, "Teacher": teacher, "Practice": practice, "senderId": uid])
+                    REF_BODHI.child(bodhiKey!).child("profile").childByAutoId().setValue(["Name": name, "PopUpGroup": popUpGroup, "City": city, "State": state, "Temple": temple, "Teacher": teacher, "Practice": practice, "senderId": uid])
                     sendComplete(true)
                 } else {
-                    REF_BODHI.childByAutoId().updateChildValues(["Name": name, "PopUpGroup": popUpGroup, "City": city, "State": state, "Temple": temple, "Teacher": teacher, "Practice": practice,"senderId": uid])
+                    REF_BODHI.child(uid).setValue(["Name": name, "PopUpGroup": popUpGroup, "City": city, "State": state, "Temple": temple, "Teacher": teacher, "Practice": practice,"senderId": uid])
                     sendComplete(true)
                 }
             }
@@ -114,6 +96,30 @@ class DataService {
             }
             
             handler(messageArray)
+        }
+    }
+    
+    func getAllBodhi(handler: @escaping (_ bodhi: [Bodhi]) -> ()) {
+        var bodhiArray = [Bodhi]()
+        REF_BODHI.observeSingleEvent(of: .value) { (bodhiSnapshot) in
+            guard let bodhiSnapshot = bodhiSnapshot.children.allObjects as? [DataSnapshot] else { return }
+            
+            for bodhi in bodhiSnapshot {
+                let name = bodhi.childSnapshot(forPath: "Name").value as! String
+                let popUpGroup = bodhi.childSnapshot(forPath: "PopUpGroup").value as! String
+                let city = bodhi.childSnapshot(forPath: "City").value as! String
+                let state = bodhi.childSnapshot(forPath: "State").value as! String
+                let temple = bodhi.childSnapshot(forPath: "Temple").value as! String
+                let teacher = bodhi.childSnapshot(forPath: "Teacher").value as! String
+                let practice = bodhi.childSnapshot(forPath: "Practice").value as! String
+                let senderId = bodhi.childSnapshot(forPath: "senderId").value as! String
+                //let key = bodhi.childSnapshot(forPath: "key").value as! String
+                let bodhi = Bodhi(name: name, popUpGroup: popUpGroup, city: city, state: state, temple: temple, teacher: teacher, practice: practice, senderId: senderId, key: bodhi.key)
+                bodhiArray.append(bodhi)
+                print(bodhiArray)
+            }
+            
+            handler(bodhiArray)
         }
     }
     

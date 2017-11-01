@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D73CB2E91FA9264D0048F9C8 /* SanghaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73CB2E81FA9264D0048F9C8 /* SanghaVC.swift */; };
+		D73CB2EB1FA93FB10048F9C8 /* SanghaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73CB2EA1FA93FB10048F9C8 /* SanghaCell.swift */; };
 		D764DCBC1F9CE8970039B121 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D764DCBB1F9CE8970039B121 /* AppDelegate.swift */; };
 		D764DCBE1F9CE8970039B121 /* ListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D764DCBD1F9CE8970039B121 /* ListVC.swift */; };
 		D764DCC31F9CE8970039B121 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D764DCC11F9CE8970039B121 /* Main.storyboard */; };
@@ -46,6 +48,8 @@
 		03C5B37D97F955E72285F4C2 /* Pods-bodhi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bodhi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bodhi/Pods-bodhi.debug.xcconfig"; sourceTree = "<group>"; };
 		A0FDB801BAC0EBA365224575 /* Pods-bodhi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bodhi.release.xcconfig"; path = "Pods/Target Support Files/Pods-bodhi/Pods-bodhi.release.xcconfig"; sourceTree = "<group>"; };
 		B0C7C65AAF6992AC6209BB4E /* Pods_bodhi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bodhi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D73CB2E81FA9264D0048F9C8 /* SanghaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanghaVC.swift; sourceTree = "<group>"; };
+		D73CB2EA1FA93FB10048F9C8 /* SanghaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanghaCell.swift; sourceTree = "<group>"; };
 		D764DCB81F9CE8970039B121 /* bodhi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bodhi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D764DCBB1F9CE8970039B121 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D764DCBD1F9CE8970039B121 /* ListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVC.swift; sourceTree = "<group>"; };
@@ -168,6 +172,7 @@
 				D764DCBD1F9CE8970039B121 /* ListVC.swift */,
 				D764DCD91F9E9E160039B121 /* ProfileVC.swift */,
 				D764DCDB1F9E9E6F0039B121 /* LoginVC.swift */,
+				D73CB2E81FA9264D0048F9C8 /* SanghaVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -181,6 +186,7 @@
 				D764DD001F9FAE6C0039B121 /* InsetTextField.swift */,
 				D764DD011F9FAE6C0039B121 /* ShadowView.swift */,
 				D764DD021F9FAE6C0039B121 /* UserCell.swift */,
+				D73CB2EA1FA93FB10048F9C8 /* SanghaCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -354,6 +360,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D73CB2E91FA9264D0048F9C8 /* SanghaVC.swift in Sources */,
 				D7739DA51FA2892800402B5F /* Bodhi.swift in Sources */,
 				D764DD061F9FAE6C0039B121 /* FeedVC.swift in Sources */,
 				D764DD0E1F9FAE6C0039B121 /* Group.swift in Sources */,
@@ -377,6 +384,7 @@
 				D764DD0C1F9FAE6C0039B121 /* UIViewExt.swift in Sources */,
 				D764DD191F9FAE6C0039B121 /* UserCell.swift in Sources */,
 				D764DD171F9FAE6C0039B121 /* InsetTextField.swift in Sources */,
+				D73CB2EB1FA93FB10048F9C8 /* SanghaCell.swift in Sources */,
 				D764DD0B1F9FAE6C0039B121 /* UIViewControllerExt.swift in Sources */,
 				D764DD141F9FAE6C0039B121 /* FeedCell.swift in Sources */,
 				D764DCDF1F9FAA180039B121 /* DataService.swift in Sources */,

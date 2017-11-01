@@ -8,8 +8,6 @@
 
 import Foundation
 
-import Foundation
-
 class Bodhi {
     private var _name: String
     private var _popUpGroup: String
@@ -18,6 +16,8 @@ class Bodhi {
     private var _temple: String
     private var _teacher: String
     private var _practice: String
+    private var _senderId: String
+    private var _key: String
     
     var name: String {
         return _name
@@ -47,8 +47,16 @@ class Bodhi {
         return _practice
     }
     
+    var senderId: String {
+        return _senderId
+    }
     
-    init(name: String, popUpGroup: String, city: String, state: String, temple: String, teacher: String, practice: String, key: String) {
+    var key: String {
+        return _key
+    }
+    
+    
+    init(name: String, popUpGroup: String, city: String, state: String, temple: String, teacher: String, practice: String, senderId: String, key: String) {
         self._name = name
         self._popUpGroup = popUpGroup
         self._city = city
@@ -56,6 +64,8 @@ class Bodhi {
         self._temple = temple
         self._teacher = teacher
         self._practice = practice
+        self._senderId = senderId
+        self._key = key
     }
     
 }
