@@ -1,0 +1,368 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "GroupCell"
+provides-nominal:
+- "5bodhi9GroupCellC"
+provides-member:
+- ["5bodhi9GroupCellC", ""]
+provides-dynamic-lookup:
+- "groupDescLbl"
+- "groupTitleLbl"
+- "memberCountLbl"
+depends-top-level:
+- "AssignmentPrecedence"
+- "GroupCell"
+- "Int"
+- "String"
+- !private "StringLiteralType"
+- "UILabel"
+- "UITableViewCell"
+depends-member:
+- !private ["s23BidirectionalCollectionP", "init"]
+- ["So15CALayerDelegateP", ""]
+- !private ["So15CALayerDelegateP", "groupDescLbl"]
+- !private ["So15CALayerDelegateP", "groupTitleLbl"]
+- !private ["So15CALayerDelegateP", "init"]
+- !private ["So15CALayerDelegateP", "memberCountLbl"]
+- !private ["So15CALayerDelegateP", "text"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "groupDescLbl"]
+- !private ["s7CVarArgP", "groupTitleLbl"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "memberCountLbl"]
+- !private ["s7CVarArgP", "text"]
+- !private ["s10CollectionP", "init"]
+- !private ["s10ComparableP", "init"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "groupDescLbl"]
+- !private ["s28CustomDebugStringConvertibleP", "groupTitleLbl"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "memberCountLbl"]
+- !private ["s28CustomDebugStringConvertibleP", "text"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "groupDescLbl"]
+- !private ["s23CustomStringConvertibleP", "groupTitleLbl"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "memberCountLbl"]
+- !private ["s23CustomStringConvertibleP", "text"]
+- !private ["s9DecodableP", "init"]
+- !private ["s9EncodableP", "init"]
+- ["s9EquatableP", ""]
+- !private ["s9EquatableP", "groupDescLbl"]
+- !private ["s9EquatableP", "groupTitleLbl"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "memberCountLbl"]
+- !private ["s9EquatableP", "text"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["5bodhi9GroupCellC", "Int"]
+- ["5bodhi9GroupCellC", "String"]
+- ["5bodhi9GroupCellC", "UILabel"]
+- ["5bodhi9GroupCellC", "configureCell"]
+- ["5bodhi9GroupCellC", "deinit"]
+- ["5bodhi9GroupCellC", "groupDescLbl"]
+- ["5bodhi9GroupCellC", "groupTitleLbl"]
+- ["5bodhi9GroupCellC", "init"]
+- ["5bodhi9GroupCellC", "memberCountLbl"]
+- ["s8HashableP", ""]
+- !private ["s8HashableP", "groupDescLbl"]
+- !private ["s8HashableP", "groupTitleLbl"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "memberCountLbl"]
+- !private ["s8HashableP", "text"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "groupDescLbl"]
+- !private ["So8NSCodingP", "groupTitleLbl"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "memberCountLbl"]
+- !private ["So8NSCodingP", "text"]
+- ["So8NSObjectC", "Int"]
+- ["So8NSObjectC", "String"]
+- ["So8NSObjectC", "UILabel"]
+- ["So8NSObjectC", "configureCell"]
+- ["So8NSObjectC", "groupDescLbl"]
+- ["So8NSObjectC", "groupTitleLbl"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "memberCountLbl"]
+- !private ["So8NSObjectC", "text"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["So16NSObjectProtocolP", "groupDescLbl"]
+- !private ["So16NSObjectProtocolP", "groupTitleLbl"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "memberCountLbl"]
+- !private ["So16NSObjectProtocolP", "text"]
+- !private ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s8SequenceP", "init"]
+- !private ["SS", "init"]
+- !private ["s14StringProtocolP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- ["So29UIAccessibilityIdentificationP", ""]
+- !private ["So29UIAccessibilityIdentificationP", "groupDescLbl"]
+- !private ["So29UIAccessibilityIdentificationP", "groupTitleLbl"]
+- !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "memberCountLbl"]
+- !private ["So29UIAccessibilityIdentificationP", "text"]
+- ["So12UIAppearanceP", ""]
+- !private ["So12UIAppearanceP", "groupDescLbl"]
+- !private ["So12UIAppearanceP", "groupTitleLbl"]
+- !private ["So12UIAppearanceP", "init"]
+- !private ["So12UIAppearanceP", "memberCountLbl"]
+- !private ["So12UIAppearanceP", "text"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So21UIAppearanceContainerP", "groupDescLbl"]
+- !private ["So21UIAppearanceContainerP", "groupTitleLbl"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "memberCountLbl"]
+- !private ["So21UIAppearanceContainerP", "text"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "text"]
+- ["So17UICoordinateSpaceP", ""]
+- !private ["So17UICoordinateSpaceP", "groupDescLbl"]
+- !private ["So17UICoordinateSpaceP", "groupTitleLbl"]
+- !private ["So17UICoordinateSpaceP", "init"]
+- !private ["So17UICoordinateSpaceP", "memberCountLbl"]
+- !private ["So17UICoordinateSpaceP", "text"]
+- ["So13UIDynamicItemP", ""]
+- !private ["So13UIDynamicItemP", "groupDescLbl"]
+- !private ["So13UIDynamicItemP", "groupTitleLbl"]
+- !private ["So13UIDynamicItemP", "init"]
+- !private ["So13UIDynamicItemP", "memberCountLbl"]
+- !private ["So13UIDynamicItemP", "text"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So18UIFocusEnvironmentP", "groupDescLbl"]
+- !private ["So18UIFocusEnvironmentP", "groupTitleLbl"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "memberCountLbl"]
+- !private ["So18UIFocusEnvironmentP", "text"]
+- ["So11UIFocusItemP", ""]
+- !private ["So11UIFocusItemP", "groupDescLbl"]
+- !private ["So11UIFocusItemP", "groupTitleLbl"]
+- !private ["So11UIFocusItemP", "init"]
+- !private ["So11UIFocusItemP", "memberCountLbl"]
+- !private ["So11UIFocusItemP", "text"]
+- ["So27UIGestureRecognizerDelegateP", ""]
+- !private ["So27UIGestureRecognizerDelegateP", "groupDescLbl"]
+- !private ["So27UIGestureRecognizerDelegateP", "groupTitleLbl"]
+- !private ["So27UIGestureRecognizerDelegateP", "init"]
+- !private ["So27UIGestureRecognizerDelegateP", "memberCountLbl"]
+- !private ["So7UILabelC", "text"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "groupDescLbl"]
+- !private ["So30UIPasteConfigurationSupportingP", "groupTitleLbl"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "memberCountLbl"]
+- !private ["So30UIPasteConfigurationSupportingP", "text"]
+- ["So11UIResponderC", "Int"]
+- ["So11UIResponderC", "String"]
+- ["So11UIResponderC", "UILabel"]
+- ["So11UIResponderC", "configureCell"]
+- ["So11UIResponderC", "groupDescLbl"]
+- ["So11UIResponderC", "groupTitleLbl"]
+- ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "memberCountLbl"]
+- !private ["So11UIResponderC", "text"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So30UIResponderStandardEditActionsP", "groupDescLbl"]
+- !private ["So30UIResponderStandardEditActionsP", "groupTitleLbl"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "memberCountLbl"]
+- !private ["So30UIResponderStandardEditActionsP", "text"]
+- ["So15UITableViewCellC", "Int"]
+- ["So15UITableViewCellC", "String"]
+- ["So15UITableViewCellC", "UILabel"]
+- ["So15UITableViewCellC", ""]
+- ["So15UITableViewCellC", "configureCell"]
+- ["So15UITableViewCellC", "groupDescLbl"]
+- ["So15UITableViewCellC", "groupTitleLbl"]
+- ["So15UITableViewCellC", "init"]
+- ["So15UITableViewCellC", "memberCountLbl"]
+- ["So18UITraitEnvironmentP", ""]
+- !private ["So18UITraitEnvironmentP", "groupDescLbl"]
+- !private ["So18UITraitEnvironmentP", "groupTitleLbl"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "memberCountLbl"]
+- !private ["So18UITraitEnvironmentP", "text"]
+- ["So6UIViewC", "Int"]
+- ["So6UIViewC", "String"]
+- ["So6UIViewC", "UILabel"]
+- ["So6UIViewC", "configureCell"]
+- ["So6UIViewC", "groupDescLbl"]
+- ["So6UIViewC", "groupTitleLbl"]
+- ["So6UIViewC", "init"]
+- ["So6UIViewC", "memberCountLbl"]
+- !private ["So6UIViewC", "text"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", ""]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "groupDescLbl"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "groupTitleLbl"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "memberCountLbl"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "groupDescLbl"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "groupTitleLbl"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "memberCountLbl"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "s23BidirectionalCollectionP"
+- "So15CALayerDelegateP"
+- "s7CVarArgP"
+- !private "s10CollectionP"
+- !private "s10ComparableP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "5bodhi9GroupCellC"
+- "s8HashableP"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- "So8NSCodingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "s26RangeReplaceableCollectionP"
+- !private "s8SequenceP"
+- !private "SS"
+- !private "s14StringProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- "So29UIAccessibilityIdentificationP"
+- "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- !private "So30UIContentSizeCategoryAdjustingP"
+- "So17UICoordinateSpaceP"
+- "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- "So11UIFocusItemP"
+- "So27UIGestureRecognizerDelegateP"
+- !private "So7UILabelC"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- "So15UITableViewCellC"
+- "So18UITraitEnvironmentP"
+- "So6UIViewC"
+- "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/Firebase/Core/Sources/Firebase.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTask.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/bodhi/Supporting Files/bodhi-Bridging-Header.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIROAuthProvider.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/bodhi/Supporting Files/SWRevealViewController.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageSwiftNameSupport.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRCoreSwiftNameSupport.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseSwiftNameSupport.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthSwiftNameSupport.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsSwiftNameSupport.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Modules/module.modulemap"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "00d569588eda175e1cef034abd48b941"

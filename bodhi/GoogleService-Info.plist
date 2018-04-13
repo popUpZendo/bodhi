@@ -7,9 +7,9 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>427861823114-fhafr2ihtaubsnjvnjts7jfs6dusdaro.apps.googleusercontent.com</string>
+	<string>427861823114-67bcbei0tp3hckmgv9c3cdpa9gq4vjv2.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.427861823114-fhafr2ihtaubsnjvnjts7jfs6dusdaro</string>
+	<string>com.googleusercontent.apps.427861823114-67bcbei0tp3hckmgv9c3cdpa9gq4vjv2</string>
 	<key>API_KEY</key>
 	<string>AIzaSyAD37iwLAaQa8KsPAI6r-g4wz_v7mFcvhw</string>
 	<key>GCM_SENDER_ID</key>
@@ -17,7 +17,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.popupzendo</string>
+	<string>com.popupzendo.bodhi</string>
 	<key>PROJECT_ID</key>
 	<string>pop-up-zendo-d462d</string>
 	<key>STORAGE_BUCKET</key>
@@ -33,7 +33,7 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:427861823114:ios:8c40a438cb072a1a</string>
+	<string>1:427861823114:ios:6e5b97fd12824f94</string>
 	<key>DATABASE_URL</key>
 	<string>https://pop-up-zendo-d462d.firebaseio.com</string>
 </dict>

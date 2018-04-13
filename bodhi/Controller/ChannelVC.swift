@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ChannelVC: UIViewController {
 
@@ -21,4 +22,19 @@ class ChannelVC: UIViewController {
         
     }
     
+    @IBAction func LogoutButton(_ sender: Any) {
+        func logOut(completion:@escaping(_ errorOccured: Bool) -> Void)  {
+            let firebaseAuth = Auth.auth()
+            do {
+                try firebaseAuth.signOut()
+                
+            } catch let signOutError as NSError {
+                completion(true)
+            }
+            
+            completion(false)
+            
+            
+        }
+    }
 }

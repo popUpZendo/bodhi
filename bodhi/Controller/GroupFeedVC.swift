@@ -58,6 +58,7 @@ class GroupFeedVC: UIViewController {
         if messageTextField.text != "" {
             messageTextField.isEnabled = false
             sendBtn.isEnabled = false
+            
             DataService.instance.uploadPost(withMessage: messageTextField.text!, forUID: Auth.auth().currentUser!.uid, withGroupKey: group?.key, sendComplete: { (complete) in
                 if complete {
                     self.messageTextField.text = ""
@@ -86,6 +87,8 @@ extension GroupFeedVC: UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "groupFeedCell", for: indexPath) as? GroupFeedCell else  { return UITableViewCell() }
         let message = groupMessages[indexPath.row]
         
+        
+       
         DataService.instance.getUsername(forUID: message.senderId) { (email) in
             cell.configureCell(profileImage: UIImage(named: "defaultProfileImage")!, email: email, content: message.content)
         }
