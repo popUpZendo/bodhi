@@ -317,7 +317,7 @@ SWIFT_CLASS("_TtC5bodhi9GroupCell")
 
 SWIFT_CLASS("_TtC5bodhi13GroupFeedCell")
 @interface GroupFeedCell : UITableViewCell
-@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified profileImage;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified profile_image;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified emailLbl;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified contentLbl;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);

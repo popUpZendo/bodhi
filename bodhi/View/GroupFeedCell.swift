@@ -7,16 +7,51 @@
 //
 
 import UIKit
+import Firebase
 
 class GroupFeedCell: UITableViewCell {
-    @IBOutlet weak var profileImage: UIImageView!
+    @IBOutlet weak var profile_image: UIImageView!
     @IBOutlet weak var emailLbl: UILabel!
     @IBOutlet weak var contentLbl: UILabel!
     
-    func configureCell(profileImage: UIImage, email: String, content: String) {
-        self.profileImage.image = profileImage
+    var sender = ""
+    
+    func configureCell(profile_image: UIImage, email: String, content: String, senderId: String) {
+        setupProfile()
+        self.profile_image.image = profile_image
         self.emailLbl.text = email
         self.contentLbl.text = content
+        //print (senderId)
+        
+    }
+    
+    func setupProfile(){
+        
+        
+        profile_image.layer.cornerRadius = profile_image.frame.size.width/2
+        profile_image.clipsToBounds = true
+        print (sender)
+        if let uid = Auth.auth().currentUser?.uid{
+            databaseRef.child("users").child(uid).observeSingleEvent(of: .value, with: { (snapshot) in
+                if let dict = snapshot.value as? [String: AnyObject]
+                {
+                    if let profileImageURL = dict["pic"] as? String
+                        
+                    {
+                        let url = URL(string: profileImageURL)
+                        URLSession.shared.dataTask(with: url!, completionHandler: { (data, response, error) in
+                            if error != nil{
+                                print(error!)
+                                return
+                            }
+                            DispatchQueue.main.async {
+                                self.profile_image?.image = UIImage(data: data!)
+                            }
+                        }).resume()
+                    }
+                }
+            })
+        }
     }
     
 }

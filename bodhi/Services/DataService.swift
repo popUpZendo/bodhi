@@ -79,7 +79,7 @@ class DataService {
         } else {
             REF_FEED.childByAutoId().updateChildValues(["content": message, "senderId": uid])
             sendComplete(true)
-        }
+        } 
     }
     
     
@@ -101,6 +101,7 @@ class DataService {
             for message in feedMessageSnapshot {
                 let content = message.childSnapshot(forPath: "content").value as! String
                 let senderId = message.childSnapshot(forPath: "senderId").value as! String
+                let pic = message.childSnapshot(forPath: "pic").value as! String
                 let message = Message(content: content, senderId: senderId)
                 messageArray.append(message)
             }

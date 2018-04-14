@@ -90,7 +90,7 @@ extension GroupFeedVC: UITableViewDelegate, UITableViewDataSource {
         
        
         DataService.instance.getUsername(forUID: message.senderId) { (email) in
-            cell.configureCell(profileImage: UIImage(named: "defaultProfileImage")!, email: email, content: message.content)
+            cell.configureCell(profile_image: UIImage(named: "defaultProfileImage")!, email: email, content: message.content, senderId: message.senderId)
         }
         return cell
     }

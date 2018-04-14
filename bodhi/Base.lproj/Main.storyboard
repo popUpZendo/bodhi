@@ -558,7 +558,7 @@
                                 <state key="normal" image="smackBurger"/>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rWg-rW-tw9">
-                                <rect key="frame" x="0.0" y="70" width="375" height="597"/>
+                                <rect key="frame" x="0.0" y="70" width="375" height="548"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="groupCell" rowHeight="100" id="Reo-8D-TK4" customClass="GroupCell" customModule="bodhi" customModuleProvider="target">
@@ -730,7 +730,7 @@
                                         <connections>
                                             <outlet property="contentLbl" destination="So7-gc-t9o" id="srn-NM-K3N"/>
                                             <outlet property="emailLbl" destination="EAO-XV-aN6" id="ao0-VI-0oP"/>
-                                            <outlet property="profileImage" destination="igd-5r-J6S" id="7dl-N0-YIg"/>
+                                            <outlet property="profile_image" destination="igd-5r-J6S" id="VZm-Gm-BIF"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -1794,6 +1794,6 @@
         <image name="whiteCheckmark" width="18" height="14"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="hBC-J5-7gm"/>
+        <segue reference="mll-t7-ree"/>
     </inferredMetricsTieBreakers>
 </document>
