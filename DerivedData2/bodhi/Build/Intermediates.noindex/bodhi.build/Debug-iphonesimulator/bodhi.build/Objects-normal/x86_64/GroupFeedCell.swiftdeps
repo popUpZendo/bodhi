@@ -27,6 +27,7 @@ depends-top-level:
 - "UITableViewCell"
 - !private "URL"
 - !private "URLSession"
+- !private "UnicodeScalarType"
 - !private "databaseRef"
 - !private "print"
 depends-member:

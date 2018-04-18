@@ -16,13 +16,15 @@ class GroupFeedCell: UITableViewCell {
     
     var sender = ""
     
+    
     func configureCell(profile_image: UIImage, email: String, content: String, senderId: String) {
         setupProfile()
         self.profile_image.image = profile_image
         self.emailLbl.text = email
         self.contentLbl.text = content
         //print (senderId)
-        
+        let sender = "\"\(senderId)\""
+        print (sender)
     }
     
     func setupProfile(){
@@ -30,11 +32,11 @@ class GroupFeedCell: UITableViewCell {
         
         profile_image.layer.cornerRadius = profile_image.frame.size.width/2
         profile_image.clipsToBounds = true
-        print (sender)
         if let uid = Auth.auth().currentUser?.uid{
             databaseRef.child("users").child(uid).observeSingleEvent(of: .value, with: { (snapshot) in
                 if let dict = snapshot.value as? [String: AnyObject]
                 {
+                    //self.usernameLabel.text = dict["username"] as? String
                     if let profileImageURL = dict["pic"] as? String
                         
                     {
