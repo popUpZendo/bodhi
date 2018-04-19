@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.1 (swiftlang-902.0.48 clang-902.0.37.1)"
 options: "3dcc6634ef573679a6a9ab1389ffd8cd"
-build_time: [1524071851, 581618000]
+build_time: [1524081828, 169728000]
 inputs:
   "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/bodhi/Controller/SanghaVC.swift": [1510006185, 0]
   "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/bodhi/Model/Bodhi.swift": [1509569382, 0]
@@ -19,7 +19,7 @@ inputs:
   "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/bodhi/Controller/CreateGroupsVC.swift": [1506112299, 0]
   "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/bodhi/Controller/MeVC.swift": [1509645916, 0]
   "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/bodhi/Controller/ListVC.swift": [1508687511, 0]
-  "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/bodhi/View/GroupFeedCell.swift": [1524071845, 0]
+  "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/bodhi/View/GroupFeedCell.swift": [1524081827, 0]
   "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/bodhi/View/GroupCell.swift": [1506114571, 0]
   "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/bodhi/Controller/GroupsVC.swift": [1508943917, 0]
   "/Users/josephhall/Documents/Swift/PopUpZendoLab/bodhi/bodhi/Extensions/UIViewExt.swift": [1501095777, 0]

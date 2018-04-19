@@ -14,26 +14,28 @@ class GroupFeedCell: UITableViewCell {
     @IBOutlet weak var emailLbl: UILabel!
     @IBOutlet weak var contentLbl: UILabel!
     
-    var sender = ""
+    var sender: String = "test"
     
     
     func configureCell(profile_image: UIImage, email: String, content: String, senderId: String) {
+        sender = (senderId as? String)!
+        "\"\(senderId)\""
         setupProfile()
         self.profile_image.image = profile_image
         self.emailLbl.text = email
         self.contentLbl.text = content
         //print (senderId)
-        let sender = "\"\(senderId)\""
-        print (sender)
+        //print (sender)
     }
+   
     
     func setupProfile(){
         
-        
+        print (sender)
         profile_image.layer.cornerRadius = profile_image.frame.size.width/2
         profile_image.clipsToBounds = true
         if let uid = Auth.auth().currentUser?.uid{
-            databaseRef.child("users").child(uid).observeSingleEvent(of: .value, with: { (snapshot) in
+            databaseRef.child("users").child(sender).observeSingleEvent(of: .value, with: { (snapshot) in
                 if let dict = snapshot.value as? [String: AnyObject]
                 {
                     //self.usernameLabel.text = dict["username"] as? String
